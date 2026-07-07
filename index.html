@@ -287,6 +287,39 @@ section{padding:96px 6%;position:relative;z-index:1}
 .cert-tag::before{content:'✦';color:var(--cyan);font-size:.58rem}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
+  /* MACHINES OPERATED */
+  .machine-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+  }
+  .machine-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 22px 24px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .machine-card:hover{ border-color: var(--accent-line); transform: translateY(-3px); }
+  .machine-name{ font-size: 15.5px; font-weight: 600; }
+  .machine-cat{
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    background: var(--accent-soft);
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
 /* CERTIFICATES */
 #certificates{background:var(--bg2)}
 .cert-cards-grid{display:flex;flex-direction:column;gap:14px}
@@ -715,6 +748,27 @@ footer span{color:var(--cyan)}
   </div>
 </section>
 
+  <!-- MACHINES OPERATED -->
+   <section id="machines" class="tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Equipment</div>
+        <h2 class="shine-text">Machines operated</h2>
+        <p>Direct, hands-on operating experience across echocardiography, cath lab imaging, stress testing and ECG systems.</p>
+      </div>
+
+      <div class="machine-grid">
+        <div class="machine-card reveal"><span class="machine-name">EPIQ 70C</span><span class="machine-cat">Echo</span></div>
+        <div class="machine-card reveal"><span class="machine-name">Affiniti 70</span><span class="machine-cat">Echo</span></div>
+        <div class="machine-card reveal"><span class="machine-name">Philips CX50</span><span class="machine-cat">Echo</span></div>
+        <div class="machine-card reveal"><span class="machine-name">FD 10</span><span class="machine-cat">C-Arm</span></div>
+        <div class="machine-card reveal"><span class="machine-name">FD 20</span><span class="machine-cat">C-Arm</span></div>
+        <div class="machine-card reveal"><span class="machine-name">GE T200</span><span class="machine-cat">TMT</span></div>
+        <div class="machine-card reveal"><span class="machine-name">Philips PageWriter TC20</span><span class="machine-cat">ECG</span></div>
+      </div>
+    </div>
+  </section>
+  
 <!-- CERTIFICATES -->
 <section id="certificates">
   <div class="inner">
