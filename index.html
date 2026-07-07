@@ -285,40 +285,7 @@ section{padding:96px 6%;position:relative;z-index:1}
 .cert-marquee:hover{animation-play-state:paused}
 .cert-tag{display:inline-flex;align-items:center;gap:7px;padding:6px 16px;border-radius:100px;background:var(--glass);border:1px solid var(--glass-border);font-size:.76rem;font-weight:500;color:var(--text);flex-shrink:0}
 .cert-tag::before{content:'✦';color:var(--cyan);font-size:.58rem}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* MACHINES OPERATED */
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Giriraj J – Cath Lab Technologist</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-<style>
-:root,[data-theme="dark"]{
-  --bg:#030a12;--bg2:#060f1c;
-  --glass:rgba(0,180,255,.07);--glass-border:rgba(0,200,255,.16);
-  --cyan:#00d4ff;--cyan2:#00ffcc;--blue:#0066ff;
-  --glow:rgba(0,212,255,.35);--text:#e8f4ff;--muted:#6a8fa8;
-  --card:#071525;--nav-bg:rgba(3,10,18,.85);--nav-scroll:rgba(3,10,18,.97);
-  --sb:#060f1c;--tb-bg:rgba(0,212,255,.12);
-}
-[data-theme="light"]{
-  --bg:#fff8f2;--bg2:#fff2e8;
-  --glass:rgba(255,120,0,.07);--glass-border:rgba(255,140,0,.22);
-  --cyan:#e85d04;--cyan2:#f48c06;--blue:#d62828;
-  --glow:rgba(232,93,4,.28);--text:#1a0a00;--muted:#7a4a2a;
-  --card:#fff0e0;--nav-bg:rgba(255,248,242,.9);--nav-scroll:rgba(255,248,242,.98);
-  --sb:#fff2e8;--tb-bg:rgba(232,93,4,.12);
-}
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;cursor:none}
-body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;overflow-x:hidden;line-height:1.6;transition:background .4s,color .4s}
-::selection{background:var(--cyan);color:#fff}
-a{color:inherit;text-decoration:none}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}
   
 /* CERTIFICATES */
 #certificates{background:var(--bg2)}
@@ -646,21 +613,7 @@ section{padding:96px 6%;position:relative;z-index:1}
 .cert-marquee:hover{animation-play-state:paused}
 .cert-tag{display:inline-flex;align-items:center;gap:7px;padding:6px 16px;border-radius:100px;background:var(--glass);border:1px solid var(--glass-border);font-size:.76rem;font-weight:500;color:var(--text);flex-shrink:0}
 .cert-tag::before{content:'✦';color:var(--cyan);font-size:.58rem}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* MACHINES OPERATED */
-#machines{background:var(--bg)}
-.machines-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
-.machine-card{background:var(--card);border:1px solid var(--glass-border);border-radius:14px;overflow:hidden;cursor:none;transition:transform .35s,box-shadow .35s}
-.machine-card:hover{transform:translateY(-5px);box-shadow:0 20px 52px var(--glow)}
-.machine-card{height:4px;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--cyan2));transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
-.machine-card:hover .machine-card-top{transform:scaleX(1)}
-.machine-card-body{padding:24px}
-.machine-num{font-size:2.2rem;font-weight:900;color:var(--glass-border);line-height:1;margin-bottom:8px}
-.machine-card-body h3{font-size:.94rem;font-weight:700;margin-bottom:8px}
-.machine-card-body p{font-size:.8rem;color:var(--muted);line-height:1.7}
-.machine-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
-.ptag{font-size:.67rem;padding:3px 9px;border-radius:6px;background:var(--glass);color:var(--cyan);border:1px solid var(--glass-border);font-weight:500}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}
   
 /* CERTIFICATES */
 #certificates{background:var(--bg2)}
@@ -1090,23 +1043,6 @@ footer span{color:var(--cyan)}
   </div>
 </section>
 
-<!-- MACHINES OPERATED -->
-<section id="machines">
-  <div class="inner">
-    <div class="section-tag">Equipments handled</div>
-    <h2 class="section-title">Machines Operated</h2>
-    <div class="section-line"></div>
-    <div class="projects-grid">
-      <div class="machine-card reveal from-up reveal-delay-1"><div class="machine-card-top"></div><div class="machine-card-body"><div class="machine-num">01</div><h3>C-Arm in Cath Lab</h3><p> Philips FD-20 and FD-10.</p><div class="project-tags"><span class="ptag">Radiation</span><span class="ptag">Imaging</span><span class="ptag">movements</span></div></div></div>
-      <div class="machine-card reveal from-up reveal-delay-2"><div class="machine-card-top"></div><div class="machine-card-body"><div class="machine-num">02</div><h3>Echo machines</h3><p>Philips EPIQ 7C, Affiniti 70c, CX 50, Sonasite Portable, Mindray Portable.</p><div class="project-tags"><span class="ptag">Imaging</span><span class="ptag">Operating</span><span class="ptag">Tools</span></div></div></div>
-      <div class="machine-card reveal from-up reveal-delay-3"><div class="machine-card-top"></div><div class="machine-card-body"><div class="machine-num">03</div><h3>TMT Machine</h3><p>GE T200.</p><div class="project-tags"><span class="ptag">Readings</span><span class="ptag">Interpretations</span><span class="ptag">Operating</span></div></div></div>
-      <div class="machine-card reveal from-up reveal-delay-1"><div class="machine-card-top"></div><div class="machine-card-body"><div class="machine-num">04</div><h3>Holter system</h3><p>Philips Holter system, Web Cardio System.</p><div class="project-tags"><span class="ptag">connection</span><span class="ptag">Reporting</span><span class="ptag">Interpretations</span></div></div></div>
-      <div class="machine-card reveal from-up reveal-delay-2"><div class="machine-card-top"></div><div class="machine-card-body"><div class="machine-num">05</div><h3>ABPM system</h3><p>Philips.</p><div class="project-tags"><span class="ptag">Managing</span><span class="ptag">Interpretations</span><span class="ptag">connection</span></div></div></div>
-      <div class="machine-card reveal from-up reveal-delay-3"><div class="machine-card-top"></div><div class="machine-card-body"><div class="machine-num">06</div><h3>ECG machine</h3><p>Philips Paperwrite Tc 20.</p><div class="project-tags"><span class="ptag">Interpretations</span><span class="ptag">Patient care</span><span class="ptag">Arrythmias</span></div></div></div>
-    </div>
-  </div>
-</section>
-  
 <!-- CERTIFICATES -->
 <section id="certificates">
   <div class="inner">
